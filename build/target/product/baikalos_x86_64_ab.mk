@@ -12,10 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/aosp_arm64_ab.mk)
+$(call inherit-product, build/target/product/aosp_x86_64_ab.mk)
 
-include vendor/aicp/build/target/product/aicp_generic_target.mk
+include vendor/baikalos/build/target/product/baikalos_generic_target.mk
 
-TARGET_NO_KERNEL_OVERRIDE := true
+PRODUCT_NAME := baikalos_x86_64_ab
 
-PRODUCT_NAME := aicp_arm64_ab
+PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties

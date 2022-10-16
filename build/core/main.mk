@@ -1,5 +1,5 @@
-# Include AICP versions
-include $(TOPDIR)vendor/aicp/build/core/main_version.mk
+# Include BAIKALOS versions
+include $(TOPDIR)vendor/baikalos/build/core/main_version.mk
 
 # Override product info for Google Play Services and SafetyNet
 ifeq ($(PRODUCT_OVERRIDE_INFO),true)

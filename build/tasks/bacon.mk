@@ -14,14 +14,14 @@
 # limitations under the License.
 
 # -----------------------------------------------------------------
-# AICP OTA update package
+# BAIKALOS OTA update package
 
-AICP_TARGET_PACKAGE  := $(PRODUCT_OUT)/$(AICP_VERSION).zip
+BAIKALOS_TARGET_PACKAGE  := $(PRODUCT_OUT)/$(BAIKALOS_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(AICP_TARGET_PACKAGE)
-	$(hide) $(SHA256) $(AICP_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(AICP_TARGET_PACKAGE).sha256sum
-	@echo "Package Complete: $(AICP_TARGET_PACKAGE)" >&2
+	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(BAIKALOSP_TARGET_PACKAGE)
+	$(hide) $(SHA256) $(BAIKALOS_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(BAIKALOS_TARGET_PACKAGE).sha256sum
+	@echo "Package Complete: $(BAIKALOS_TARGET_PACKAGE)" >&2

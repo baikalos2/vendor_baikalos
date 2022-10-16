@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018-2019 The aicpOS Project
+# Copyright (C) 2018-2019 The BaikalosOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,29 +15,29 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_gsi_arm.mk \
-    $(LOCAL_DIR)/aicp_gsi_arm64.mk \
-    $(LOCAL_DIR)/aicp_gsi_x86.mk \
-    $(LOCAL_DIR)/aicp_gsi_x86_64.mk \
-    $(LOCAL_DIR)/aicp_arm_ab.mk \
-    $(LOCAL_DIR)/aicp_arm64_ab.mk \
-    $(LOCAL_DIR)/aicp_x86_ab.mk \
-    $(LOCAL_DIR)/aicp_x86_64_ab.mk \
-    $(LOCAL_DIR)/aicp_tv_arm.mk \
-    $(LOCAL_DIR)/aicp_tv_arm64.mk \
-    $(LOCAL_DIR)/aicp_tv_x86.mk \
-    $(LOCAL_DIR)/aicp_tv_x86_64.mk
+    $(LOCAL_DIR)/baikalos_gsi_arm.mk \
+    $(LOCAL_DIR)/baikalos_gsi_arm64.mk \
+    $(LOCAL_DIR)/baikalos_gsi_x86.mk \
+    $(LOCAL_DIR)/baikalos_gsi_x86_64.mk \
+    $(LOCAL_DIR)/baikalos_arm_ab.mk \
+    $(LOCAL_DIR)/baikalos_arm64_ab.mk \
+    $(LOCAL_DIR)/baikalos_x86_ab.mk \
+    $(LOCAL_DIR)/baikalos_x86_64_ab.mk \
+    $(LOCAL_DIR)/baikalos_tv_arm.mk \
+    $(LOCAL_DIR)/baikalos_tv_arm64.mk \
+    $(LOCAL_DIR)/baikalos_tv_x86.mk \
+    $(LOCAL_DIR)/baikalos_tv_x86_64.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_gsi_arm-userdebug \
-    aicp_gsi_arm64-userdebug \
-    aicp_gsi_x86-userdebug \
-    aicp_gsi_x86_64-userdebug \
-    aicp_arm_ab-userdebug \
-    aicp_arm64_ab-userdebug \
-    aicp_x86_ab-userdebug \
-    aicp_x86_64_ab-userdebug \
-    aicp_tv_arm-userdebug \
-    aicp_tv_arm64-userdebug \
-    aicp_tv_x86-userdebug \
-    aicp_tv_x86_64-userdebug
+    baikalos_gsi_arm-userdebug \
+    baikalos_gsi_arm64-userdebug \
+    baikalos_gsi_x86-userdebug \
+    baikalos_gsi_x86_64-userdebug \
+    baikalos_arm_ab-userdebug \
+    baikalos_arm64_ab-userdebug \
+    baikalos_x86_ab-userdebug \
+    baikalos_x86_64_ab-userdebug \
+    baikalos_tv_arm-userdebug \
+    baikalos_tv_arm64-userdebug \
+    baikalos_tv_x86-userdebug \
+    baikalos_tv_x86_64-userdebug

@@ -12,12 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/generic/common/gsi_arm64.mk)
+$(call inherit-product, build/target/product/aosp_arm64_ab.mk)
 
-include vendor/aicp/build/target/product/aicp_generic_target.mk
-
-PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
+include vendor/baikalos/build/target/product/baikalos_generic_target.mk
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := aicp_gsi_arm64
+PRODUCT_NAME := baikalos_arm64_ab

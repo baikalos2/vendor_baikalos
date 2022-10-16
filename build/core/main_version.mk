@@ -4,25 +4,26 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
-# AICP System Version
+# BAIKALOS System Version
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.aicp.display.version=$(AICP_VERSION) \
-    ro.aicp.buildtype=$(AICP_BUILDTYPE) \
-    ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION) \
-    ro.modversion=$(AICP_VERSION) \
-    ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
+    ro.baikalos.display.version=$(BAIKALOS_VERSION) \
+    ro.baikalos.buildtype=$(BAIKALOS_BUILDTYPE) \
+    ro.baikalos.version.update=$(BAIKALOS_BRANCH)-$(VERSION) \
+    ro.modversion=$(BAIKALOS_VERSION) \
+    ro.baikalos.version=$(VERSION)-$(BAIKALOS_BUILDTYPE)
 
 # additions for LOS-recovery
 ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.lineage.build.version=$(VERSION) \
-    ro.lineage.version=-$(shell date +%Y%m%d)_$(shell date +%H%M%S)-
+    ro.lineage.version=-$(shell date +%Y%m%d)-
+#    ro.lineage.version=-$(shell date +%Y%m%d)_$(shell date +%H%M%S)-
 
-# AICP Stats
+# BAIKALOS Stats
 ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.aicp.branch=$(AICP_BRANCH) \
-    ro.romstats.url=https://stats.aicp-rom.com/ \
-    ro.romstats.name=AICP \
-    ro.romstats.buildtype=$(AICP_BUILDTYPE) \
+    ro.baikalos.branch=$(BAIKALOS_BRANCH) \
+    ro.romstats.url=https://stats.baikalos.com/ \
+    ro.romstats.name=BaikalOS \
+    ro.romstats.buildtype=$(BAIKALOS_BUILDTYPE) \
     ro.romstats.version=$(VERSION) \
     ro.romstats.tframe=1 \
     ro.romstats.askfirst=1

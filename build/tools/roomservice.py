@@ -43,9 +43,9 @@ DEBUG = False
 
 custom_local_manifest = ".repo/local_manifests/roomservice.xml"
 custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 't13.0')
-custom_dependencies = "aicp.dependencies"
-org_manifest = "aicp"  # leave empty if org is provided in manifest
-org_display = "AICP"  # needed for displaying
+custom_dependencies = "baikalos.dependencies"
+org_manifest = "baikalos"  # leave empty if org is provided in manifest
+org_display = "BAIKALOS"  # needed for displaying
 
 github_auth = None
 
@@ -133,7 +133,7 @@ def add_to_manifest(repos, fallback_branch=None):
         elif "/" not in repo_name:
             repo_remote=org_manifest
         elif "/" in repo_name:
-            repo_remote="aicp"
+            repo_remote="baikalos"
 
         if is_in_manifest(repo_path):
             print('already exists: %s' % repo_path)
@@ -185,7 +185,7 @@ def fetch_dependencies(repo_path, fallback_branch=None, first_dependency=False):
     print('Looking for dependencies')
 
     if first_dependency:
-        os.system('vendor/aicp/build/tools/roomcleaner.py %s' % repo_path)
+        os.system('vendor/baikalos/build/tools/roomcleaner.py %s' % repo_path)
 
     dep_p = '/'.join((repo_path, custom_dependencies))
     if os.path.exists(dep_p):
@@ -304,7 +304,7 @@ def main():
         fallback_branch = detect_revision(repository)
         manufacturer = repo_name[7:-(len(device)+1)]
         repo_path = "device/%s/%s" % (manufacturer, device)
-        adding = [{'repository': "AICP/%s" % repo_name, 'target_path': repo_path}]
+        adding = [{'repository': "baikalos2/%s" % repo_name, 'target_path': repo_path}]
 
         add_to_manifest(adding, fallback_branch)
 

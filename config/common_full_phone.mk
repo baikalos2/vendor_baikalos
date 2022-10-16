@@ -1,16 +1,16 @@
-# Inherit full common AICP stuff
-$(call inherit-product, vendor/aicp/config/common_full.mk)
+# Inherit full common BAIKALOS stuff
+$(call inherit-product, vendor/baikalos/config/common_full.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
     LatinIME
 
-# Include AICP LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aicp/overlay/dictionaries
+# Include BAIKALOS LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/baikalos/overlay/dictionaries
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/baikalos/overlay/dictionaries
 
 # Enable support of one-handed mode
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.support_one_handed_mode=true
 
-$(call inherit-product, vendor/aicp/config/telephony.mk)
+$(call inherit-product, vendor/baikalos/config/telephony.mk)
