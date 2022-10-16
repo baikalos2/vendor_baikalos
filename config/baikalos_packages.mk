@@ -160,4 +160,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hosts.baikalos_adblock
 
+# baikalos su
+PRODUCT_PACKAGES += \
+    baikal_su
+
 -include packages/overlays/AICP/product_packages.mk

@@ -12,6 +12,9 @@ include vendor/baikalos/config/baikalos_packages.mk
 # Include BAIKALOS version
 include vendor/baikalos/config/baikalos_props.mk
 
+# Include BAIKALOS fonts
+include vendor/baikalos/config/baikalos_fonts.mk
+
 # AOSP recovery flashing
 ifeq ($(TARGET_USES_AOSP_RECOVERY),true)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
